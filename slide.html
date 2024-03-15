@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sidebar Menu Project</title>
+</head>
+<body>
+    <div id="sideMenu" class="sideMenu">
+        <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">×</a>
+        <div class="mainMenu">
+            <h2>SideMenu</h2>
+            <a href="javascript:void(0)" onclick="showContent('Home')">Home</a>
+            <a href="javascript:void(0)" onclick="showContent('About')">About</a>
+            <a href="javascript:void(0)" onclick="showContent('Count')">Count</a>
+        </div>
+    </div>
+    <div id="contentArea">
+        <span style="font-size: 30px; cursor: pointer" onclick="openNav()">☰</span>
+        <div class="contentText" id="contentText">
+            <h2 id="contentTitle">Sidebar</h2>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
